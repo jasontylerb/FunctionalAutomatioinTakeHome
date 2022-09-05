@@ -1,0 +1,22 @@
+{
+  "name": "cypress-poc",
+  "version": "1.0.0",
+  "description": "Proof of concept for Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --reporter mochawesome",
+    "debug": "npx cypress open",
+    "parrallel": "npx cypress run --record --key=cyprss --parallel --ci-build-id=jenkins"
+  },
+  "keywords": [
+    "QA",
+    "PoC"
+  ],
+  "author": "Jason Burns",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
+  }
+}
